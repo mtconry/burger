@@ -27,3 +27,7 @@ app.use(methodOverride('_method'));
 
 //Require the routes set in burger_controller.js
 require('./controllers/burgers_controller.js')(app);
+
+app.use("/", routes);
+
+app.listen(port);
